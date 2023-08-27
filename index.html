@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Page</title>
+
+<!-- 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #f7f8fc;
+  font-family: "Roboto", sans-serif;
+  color: #10182f;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tag-teal {
+  background-color: #47bcd4;
+}
+.tag-purple {
+  background-color: #5e76bf;
+}
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.center-heading {
+  text-align: center;
+  margin: 20px 0;
+
+}
+
+.center-heading-left {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.more-cards {
+  text-align: center;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+/* Mentor Carousel Styles */
+.mentor-carousel {
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+.mentor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.mentor img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.designation {
+  font-weight: bold;
+}
+
+
+
+/*mentor box css*/
+
+
+
+.h3 {
+  margin: 10px 0;
+}
+
+.h5 {
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+.h6 {
+  margin: 4px 0;
+  text-transform: uppercase;
+}
+
+.p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.card-container-mentor {
+  background-color: #231E39;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+  color: #B3B8CD;
+  padding-top: 30px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.card-container-mentor .pro {
+  color: #231E39;
+  background-color: #FEBB0B;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+
+
+.card-container-mentor .round {
+  border: 1px solid #03BFCB;
+  border-radius: 50%;
+  padding: 7px;
+  width: 120px; /* Set the width of the image */
+  height: 120px; /* Set the height of the image */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.button.primary {
+  background-color: #03BFCB;
+  border: 1px solid #03BFCB;
+  border-radius: 3px;
+  color: #231E39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+.card-container-mentor-wrapper {
+      display: flex;
+      justify-content: space-between; /* Adjust as needed */
+      flex-wrap: wrap; /* Allow items to wrap to next line */
+      margin-top: 20px; /* Add margin for separation */
+      gap: 30px; /* Add gap between items */
+    }
+
+    .text-color {
+  background: linear-gradient(360deg, #234EB0 5%, #9010B0 100%);
+  -webkit-background-clip: text; /* Apply background to text only */
+  color: transparent; /* Make text transparent */
+}
+
+
+</style>
+
+</style>
+
+</head>
+<body>
+<div class="container">
+  <div class="center-heading">
+    <h1 class="text-color" >Team Page</h1>
+    <h2 class="text-color" >Learn from Scientists, research scholors from the top institutes in the world</h2>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-body">
+       
+        <h1 class="text-color" >Cambridge University </h1>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="text-color" >Harvard University</h1>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        
+        <h1 class="text-color" >University Of California</h1>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="text-color"  >ETH Zhurich</h1>
+      </div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-body">
+      <h1 class="text-color" >Max Planck</h1>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+      <h1 class="text-color" >University of Edinburgh</h1>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+       <h1 class="text-color" >Johns Hopkins University</h1>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="text-color" >Midigor State University</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="text-color" >University Of Illinois</h1>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+       <h1 class="text-color" >Humboldt University Of Berlin</h1>
+      </div>
+    </div>
+   
+    <div class="more-cards">
+    ........... and so on
+  </div>
+  <div></div>
+  </div>
+
+<div class="center-heading">
+    <h1 class="text-color">Meet Your Mentors</h1>
+</div>
+  <div class="mentor-carousel">
+    <div class="mentor">
+      <img src="http://sciastra.com/new_admin//teams/files/Piyush_Verma_biology.jpg" alt="Mentor 1">
+      <p class="designation">Lead Developer</p>
+      <h6 class="h6">Principal Project Scientist</h6>
+    </div>
+    <div class="mentor">
+      <img src="http://sciastra.com/new_admin//teams/files/Siddharth_Bhatt_physics.jpg" alt="Mentor 2">
+      <p class="designation">Design Lead</p>
+      <h6 class="h6">Principal Project Scientist</h6>
+    </div>
+    <div class="mentor">
+      <img src="http://sciastra.com/new_admin//teams/files/Saumya_Sharma_mathematics.png" alt="Mentor 3">
+      <p class="designation">Tech Evangelist</p>
+      <h6 class="h6">Principal Project Scientist</h6>
+    </div>
+     <div class="mentor">
+      <img src="http://sciastra.com/new_admin//teams/files/Saumya_Sharma_mathematics.png" alt="Mentor 4">
+      <p class="designation">Tech Evangelist</p>
+      <h6 class="h6">Principal Project Scientist</h6>
+    </div>
+</div>
+
+ <div class="mentor-carousel">
+    <div class="mentor">
+      <img src="http://sciastra.com/new_admin//teams/files/Piyush_Verma_biology.jpg" alt="Mentor 1">
+      <p class="designation">Lead Developer</p>
+      <h6 class="h6">Principal Project Scientist</h6>
+    </div>
+    <div class="mentor">
+      <img src="http://sciastra.com/new_admin//teams/files/Siddharth_Bhatt_physics.jpg" alt="Mentor 2">
+      <p class="designation">Design Lead</p>
+      <h6 class="h6">Principal Project Scientist</h6>
+    </div>
+    <div class="mentor">
+      <img src="http://sciastra.com/new_admin//teams/files/Saumya_Sharma_mathematics.png" alt="Mentor 3">
+      <p class="designation">Tech Evangelist</p>
+      <h6 class="h6">Principal Project Scientist</h6>
+    </div>
+    <div class="mentor">
+      <img src="http://sciastra.com/new_admin//teams/files/Saumya_Sharma_mathematics.png" alt="Mentor 3">
+      <p class="designation">Tech Evangelist</p>
+      <h6 class="h6">Principal Project Scientist</h6>
+    </div>
+</div>
+
+ <div class="mentor-carousel">
+    <div class="mentor">
+      <img src="http://sciastra.com/new_admin//teams/files/Piyush_Verma_biology.jpg" alt="Mentor 1">
+      <p class="designation">Lead Developer</p>
+      <h6 class="h6">Principal Project Scientist</h6>
+    </div>
+    <div class="mentor">
+      <img src="http://sciastra.com/new_admin//teams/files/Siddharth_Bhatt_physics.jpg" alt="Mentor 2">
+      <p class="designation">Design Lead</p>
+      <h6 class="h6">Principal Project Scientist</h6>
+    </div>
+    <div class="mentor">
+      <img src="http://sciastra.com/new_admin//teams/files/Saumya_Sharma_mathematics.png" alt="Mentor 3">
+      <p class="designation">Tech Evangelist</p>
+      <h6 class="h6">Principal Project Scientist</h6>
+    </div>
+    <div class="mentor">
+      <img src="http://sciastra.com/new_admin//teams/files/Saumya_Sharma_mathematics.png" alt="Mentor 3">
+      <p class="designation">Tech Evangelist</p>
+      <h6 class="h6">Principal Project Scientist</h6>
+   
+    </div>
+</div>
+
+<!-- mentors and advisiors div -->
+
+<div class="center-heading-left">
+  <h1 class="text-color" style="text-align: left; margin: 20px 0;">Mentor & Advisior</h1>
+</div>
+ 
+
+<div class="card-container-mentor-wrapper">
+  <div class="card-container-mentor">
+  
+    <img class="round" src="https://www.sciastra.com/teams/dr_omkar.jpg" alt="user" />
+    <h3 class="h3">Dr. Omkar</h3>
+    <h5 class="h5">Principal Project Scientist</h5>
+    <p class="p">Indian Institute of Technology, Madras</p>
+   
+  
+  </div>
+
+  <div class="card-container-mentor">  
+    <img class="round" src="https://www.sciastra.com/teams/akhil_tripathi_niser.jpg" alt="user" />
+    <h3 class="h3">Akhil Tripathi</h3>
+    <!-- <h6 class="h6">New York</h6>
+    <p class="p"> User interface designer and <br/> front-end developer</p> -->
+    <div class="buttons">
+      <button class="button primary">
+        Message
+      </button>
+      
+    </div>
+  
+  </div>
+
+  <div class="card-container-mentor">  
+    <img class="round" src="  https://www.sciastra.com/teams/vivek_dwivedi_niser.jpg" alt="user" />
+    <h3 class="h3">Vivek Dwivedi</h3>
+    <!-- <h6 class="h6">New York</h6>
+    <p class="p"> User interface designer and <br/> front-end developer</p>
+    <div class="buttons"> -->
+      <button class="button primary">
+        Message
+      </button>
+      
+    </div>
+
+  
+  </div>
+</div>
+
+</div>
+</body>
+</html>
